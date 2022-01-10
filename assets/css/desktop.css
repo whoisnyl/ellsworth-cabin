@@ -1,0 +1,698 @@
+/* =========================== HEADER */
+
+#header {
+  background-color: #21240b;
+  padding: 0 45px;
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 150;
+}
+
+#header .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#header .wrapper {
+  max-width: 1920px;
+  padding: 25px 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+#header #navigation {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+#header #logo,
+#header #booking {
+  position: relative;
+  z-index: 15;
+}
+
+#logo img {
+  max-width: 294px;
+}
+
+#navigation nav {
+  height: 100%;
+  list-style: none;
+}
+
+#navigation nav li a {
+  display: block;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#booking .btn-icon {
+  display: block;
+  background-image: url("../images/icon__reception.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+}
+
+#header .flaoting-plant {
+  position: absolute;
+  width: 35px;
+  height: 158px;
+  top: 0;
+  right: 220px;
+}
+
+/* =========================== MAIN BANNER */
+
+#mainBanner {
+  height: 963px;
+  padding-top: 280px;
+  position: relative;
+  background-image: url("../images/banner__main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#mainBanner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  left: 0;
+  top: 0;
+  z-index: 15;
+  background: linear-gradient(
+    180deg,
+    rgba(33, 36, 11, 1) 0%,
+    rgba(33, 36, 11, 1) 10%,
+    rgba(0, 212, 255, 0) 100%
+  );
+}
+
+#mainBanner #headerReview {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  z-index: 25;
+}
+
+#headerReview h1 {
+  font-size: 75px;
+  font-family: "Ethdown";
+  line-height: 1.2;
+}
+
+#headerReview p {
+  font-style: italic;
+  line-height: 1.6;
+}
+
+#headerReview .btn {
+  margin-top: 20px;
+}
+
+#mainBanner #bookingForm {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 25;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bookingForm .wrapper {
+  max-width: 1320px;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+#bookingForm .wrapper::before {
+  content: "";
+  display: block;
+  background-color: #873c0c;
+  width: 85%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  margin-left: -60px;
+}
+
+#bookingForm .wrapper > .hstack {
+  position: relative;
+  z-index: 15;
+}
+
+#bookingForm .spacing {
+  width: 25px;
+}
+
+#bookingForm .input-group {
+  max-width: 600px;
+}
+
+#bookingForm .fc-ui {
+  max-width: 300px;
+}
+
+#bookingForm .btn {
+  height: 59px;
+  padding: 16px 30px;
+  min-width: 180px;
+}
+
+/* =========================== ABOUT */
+
+#aboutSection {
+  position: relative;
+  background-image: url("../images/about__bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 857px;
+  z-index: 15;
+}
+
+#aboutSection .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#aboutSection .wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#aboutSection #aboutBanner {
+  width: 100%;
+  height: 938px;
+  max-width: 814px;
+  position: relative;
+  background-color: #21240b;
+}
+
+#aboutBanner canvas {
+  display: block;
+  margin: 0;
+  background-image: url("../images/banner__welcome.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#aboutSection #aboutDetails {
+  padding: 140px 130px 0 140px;
+}
+
+#aboutDetails #aboutHeading {
+  max-width: 600px;
+}
+
+#aboutHeading p {
+  font-style: italic;
+  line-height: 2.06;
+  margin-bottom: 40px;
+}
+
+#aboutHeading .btn:first-of-type {
+  margin-right: 13px;
+}
+
+#aboutHeading a {
+  margin-top: 15px;
+  display: inline-block;
+  font-size: 14px;
+  color: #6d7054;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#aboutIcons {
+  margin-top: 70px;
+}
+
+#aboutIcons .icons-with-text {
+  max-width: 62px;
+}
+
+#aboutIcons .icons-with-text img {
+  max-height: 58px;
+}
+
+#aboutIcons .icons-with-text p {
+  color: #6d7054;
+  font-size: 13px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+#aboutSection .flaoting-plant {
+  position: absolute;
+  width: 202px;
+  height: 108px;
+  top: 113px;
+  right: 0;
+}
+
+/* =========================== ACTIVITIES */
+
+#activitiesSection {
+  position: relative;
+  background-color: #393e1f;
+  padding-top: 190px;
+  z-index: 10;
+  background-image: url("../images/activities__leaf-bg.png");
+  background-repeat: no-repeat;
+  background-position: top -120px right -50px;
+  background-size: 560px 801px;
+}
+
+#activitiesSection .wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#activitiesSection .button-holder {
+  padding: 80px 0 115px;
+}
+
+#activitiesSection .flaoting-plant {
+  position: absolute;
+  width: 152px;
+  height: 309px;
+  bottom: 0;
+  left: 70px;
+}
+
+#activitiesHeading p {
+  line-height: 1.65;
+  font-style: italic;
+  font-weight: 300;
+}
+
+#activitiesList {
+  margin-top: 70px;
+}
+
+#activitiesList .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#activitiesList .row > div {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#activitiesList .list-thumbnail {
+  width: 100%;
+  position: relative;
+}
+
+#activitiesList .list-thumbnail canvas {
+  width: 100%;
+  display: block;
+  padding-bottom: 25.5%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#activitiesList .list-thumbnail .tag {
+  position: absolute;
+  background-color: #d7ddaf;
+  width: 155px;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #3a3e25;
+  letter-spacing: 0.98;
+  top: 15px;
+  left: 0;
+}
+
+#activitiesList .list-section {
+  margin-top: 32px;
+}
+
+#activitiesList .list-section h4 {
+  margin-bottom: 16px;
+}
+
+#activitiesList .list-section p {
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+/* =========================== GALLERY */
+
+#gallerySection {
+  position: relative;
+  background-image: url("../images/gallery__bg.jpg");
+  background-color: #393e1f;
+  padding-top: 120px;
+  z-index: 10;
+}
+
+/* #gallerySection::after {
+  content: "";
+  display: block;
+  width: 466px;
+  height: 713px;
+  background-image: url("../images/gallery__leaf-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 466px 713px;
+} */
+
+#gallerySection .wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#gallerySection .button-holder {
+  padding: 80px 0 115px;
+}
+
+#gallerySection .flaoting-plant {
+  position: absolute;
+  width: 120px;
+  height: 197px;
+  bottom: 0;
+  right: 82px;
+}
+
+#galleryContent .gallery-category {
+  margin-bottom: 32px;
+}
+
+#galleryContent .gallery-category nav {
+  list-style: none;
+}
+
+#galleryContent .gallery-category li:not(.divider) {
+  padding: 17px 24px;
+  height: 60px;
+  color: #d7ddaf;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.35px;
+  cursor: pointer;
+}
+
+#galleryContent .gallery-category li.active {
+  color: #21240b;
+  background-color: #d7ddaf;
+}
+
+#galleryContent .gallery-category li.divider {
+  background-color: #393c1f;
+  width: 1px;
+  height: 10px;
+}
+
+#galleryGrid .row {
+  margin: -15px;
+}
+
+#galleryGrid .row > div {
+  padding: 15px;
+}
+
+#galleryGrid .grid-thumbnail {
+  width: 100%;
+  position: relative;
+}
+
+#galleryGrid .grid-thumbnail canvas {
+  width: 100%;
+  display: block;
+  padding-bottom: 15%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* =========================== TESTIMONIALS */
+
+#testimonialsSection {
+  position: relative;
+  background-color: #393e1f;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  z-index: 10;
+}
+
+#testimonialsSection .wrapper {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+#testimonialsSection .inner-wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+#testimonialsSection .button-holder {
+  padding: 80px 0 115px;
+}
+
+#testimonialsSection .flaoting-plant {
+  position: absolute;
+  width: 221px;
+  height: 108px;
+  bottom: 100px;
+  left: 0;
+}
+
+#testimonialHeading p {
+  font-size: 17px;
+  line-height: 1.76;
+  margin-bottom: 0;
+}
+
+#testimonialsSlider {
+  margin-top: 60px;
+}
+
+#testimonialsSlider .testimonials-item {
+  padding: 0 100px;
+}
+
+#testimonialsSlider .testimonials-item .slider-thumbnail {
+  width: 390px;
+  height: 390px;
+  margin-right: 50px;
+}
+
+#testimonialsSlider .testimonials-item .slider-thumbnail canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#testimonialsSlider .testimonials-item .slider-details {
+  max-width: 540px;
+}
+
+#testimonialsSlider .testimonials-item .slider-details h4 {
+  font-family: "Ethdown";
+  font-size: 30px;
+  color: #d7ddaf;
+  margin-bottom: 30px;
+}
+
+#testimonialsSlider .testimonials-item .slider-details p {
+  font-style: italic;
+  line-height: 1.76;
+}
+
+#testimonialsSlider .testimonials-item .slider-details img {
+  width: 27px;
+  height: 27px;
+}
+
+#testimonialsSlider .slick-dots {
+  list-style: none;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+#testimonialsSlider .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+  display: block;
+  width: 17px;
+  height: 17px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+  margin: 0 2px;
+}
+
+#testimonialsSlider .slick-dots li button:hover,
+#testimonialsSlider .slick-dots li button:focus {
+  outline: none;
+}
+#testimonialsSlider .slick-dots li button:hover:before,
+#testimonialsSlider .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+#testimonialsSlider .slick-dots li button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 17px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #d7ddaf;
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+}
+#testimonialsSlider .slick-dots li.slick-active button:before {
+  width: 11px;
+  height: 11px;
+  background-color: #d7ddaf;
+  border: 0;
+  border-radius: 11px;
+  top: 50%;
+  left: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+}
+
+#testimonialsSection .custom-arrows > div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #21240b;
+  top: 50%;
+  margin-top: -50px;
+  background-repeat: no-repeat;
+  background-size: 20px 36px;
+  background-position: center;
+  cursor: pointer;
+}
+
+#testimonialsSection .prev {
+  background-image: url("../images/icon__arrow-left.png");
+  left: 0;
+}
+
+#testimonialsSection .next {
+  background-image: url("../images/icon__arrow-right.png");
+  right: 0;
+}
+
+/* =========================== MAP */
+
+#mapSection {
+  position: relative;
+  background-image: url("../images/map__bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  z-index: 10;
+}
+
+#mapSection .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#mapSection .wrapper {
+  max-width: 1920px;
+  padding-right: 45px;
+  padding-left: 300px;
+  margin: 0 auto;
+}
+
+#mapDetails {
+  max-width: 600px;
+}
+
+#mapDetails p {
+  line-height: 2.06;
+  font-style: italic;
+  margin-bottom: 45px;
+}
+
+#mapDetails .btn-icon {
+  display: block;
+  background-image: url("../images/icon__location.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 12px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+#mapFrame {
+  width: 790px;
+  height: 530px;
+}
+
+#mapFrame canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* =========================== FOOTER */
+
+#footer {
+  background-color: #191c08;
+  height: 92px;
+  padding: 35px 0;
+}
+
+#footer p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#footer p a {
+  color: #d7ddaf;
+}

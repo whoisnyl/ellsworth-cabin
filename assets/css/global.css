@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "Ethdown";
+  src: url("../fonts/EthDown/Ethdown-Regular.eot");
+  src: url("../fonts/EthDown/Ethdown-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/EthDown/Ethdown-Regular.woff2") format("woff2"),
+    url("../fonts/EthDown/Ethdown-Regular.woff") format("woff"),
+    url("../fonts/EthDown/Ethdown-Regular.ttf") format("truetype"),
+    url("../fonts/EthDown/Ethdown-Regular.svg#Ethdown-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../fonts/Axiforma/Axiforma-Light.eot");
+  src: url("../fonts/Axiforma/Axiforma-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Axiforma/Axiforma-Light.woff2") format("woff2"),
+    url("../fonts/Axiforma/Axiforma-Light.woff") format("woff"),
+    url("../fonts/Axiforma/Axiforma-Light.ttf") format("truetype"),
+    url("../fonts/Axiforma/Axiforma-Light.svg#Axiforma-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Axiforma";
+  src: url("../fonts/Axiforma/Axiforma-Regular.eot");
+  src: url("../fonts/Axiforma/Axiforma-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Axiforma/Axiforma-Regular.woff2") format("woff2"),
+    url("../fonts/Axiforma/Axiforma-Regular.woff") format("woff"),
+    url("../fonts/Axiforma/Axiforma-Regular.ttf") format("truetype"),
+    url("../fonts/Axiforma/Axiforma-Regular.svg#Axiforma-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "PT Serif", serif;
+  color: #fff;
+  font-size: 13px;
+}
+
+*,
+*::before,
+*::after,
+html,
+body {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+.container-fluid,
+.container {
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  * {
+    font-size: 15px;
+  }
+}
+
+/* ====================== TYPOGRAPHY */
+
+.heading-title {
+  font-size: 24px;
+  color: #ddd2af;
+  font-family: "Ethdown";
+  margin-bottom: 20px;
+}
+
+.heading-title::after {
+  content: "";
+  display: block;
+  background-image: url("../images/icon__under-title.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 10px;
+}
+
+.mini-title {
+  font-family: "Ethdown";
+  font-size: 24px;
+  color: #ddd2af;
+}
+
+@media screen and (min-width: 1200px) {
+  .heading-title {
+    font-size: 55px;
+    margin-bottom: 40px;
+  }
+
+  .heading-title::after {
+    width: 57px;
+    height: 15px;
+  }
+
+  .mini-title {
+    font-size: 28px;
+  }
+}
+
+/* ====================== LINK */
+
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+  -ms-transition: color 0.3s linear;
+  -o-transition: color 0.3s linear;
+}
+
+.link-primary {
+  color: #fff;
+}
+
+.link-primary:hover,
+.link-primary:focus {
+  color: #d7ddaf;
+}
+
+/* ====================== BUTTON */
+
+.btn {
+  letter-spacing: 1.2px;
+  height: 45px;
+  font-size: 14px;
+  padding: 10px 16px;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.btn-primary,
+a.btn-primary {
+  background-color: #d7ddaf;
+  border-color: #d7ddaf;
+  color: #21240b;
+}
+
+.btn-primary span,
+a.btn-primary span {
+  color: #21240b;
+  font-size: 14px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+a.btn-primary:hover,
+a.btn-primary:focus {
+  background-color: #bbc291;
+  border-color: #bbc291;
+  color: #21240b;
+}
+
+.btn-primary:hover span,
+.btn-primary:focus span,
+a.btn-primary:hover span,
+a.btn-primary:focus span {
+  color: #21240b;
+}
+
+.btn-outline-primary,
+a.btn-outline-primary {
+  background-color: transparent;
+  border-color: #d7ddaf;
+  color: #d7ddaf;
+}
+
+.btn-outline-primary span,
+a.btn-outline-primary span {
+  color: #d7ddaf;
+  font-size: 14px;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+a.btn-outline-primary:hover,
+a.btn-outline-primary:focus {
+  background-color: #d7ddaf;
+  border-color: #d7ddaf;
+  color: #21240b;
+}
+
+.btn-outline-primary:hover span,
+.btn-outline-primary:focus span,
+a.btn-outline-primary:hover span,
+a.btn-outline-primary:focus span {
+  color: #21240b;
+}
+
+@media screen and (min-width: 1200px) {
+  .btn {
+    height: 60px;
+    font-size: 16px;
+    padding: 18px 35px;
+  }
+
+  .btn-primary span,
+  a.btn-primary span {
+    font-size: 16px;
+  }
+
+  .btn-outline-primary span,
+  a.btn-outline-primary span {
+    font-size: 16px;
+  }
+}
+
+/* ====================== FORM CONTROL */
+
+.form-control {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent;
+  height: 45px;
+  border: 1px solid #ddd2af;
+  border-radius: 0;
+  font-size: 13px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.form-control:focus {
+  border-color: #ddd2af;
+  background-color: transparent;
+  color: #fff;
+}
+
+.fc-ui {
+  position: relative;
+  background-color: transparent;
+  height: 45px;
+  width: 100%;
+  border: 1px solid #ddd2af;
+  padding: 4px 14px;
+  cursor: pointer;
+}
+
+.fc-ui > p {
+  margin-bottom: 0;
+}
+
+.fc-ui--placeholder {
+  font-size: 11px;
+  letter-spacing: 0.98;
+  color: #ddd2af;
+}
+
+.fc-ui--value {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .fc-ui {
+    height: 60px;
+    padding: 7px 16px;
+  }
+
+  .fc-ui--placeholder {
+    font-size: 13px;
+  }
+
+  .fc-ui--value {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,504 @@
+/* =========================================== MIN WIDTH 768px */
+
+@media screen and (min-width: 768px) {
+  /* =========================== HEADER */
+
+  #header {
+    padding: 0 30px;
+  }
+
+  #bookingForm .date {
+    max-width: initial;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  #bookingForm .date > div:last-of-type {
+    margin-left: -1px;
+  }
+
+  #bookingForm .date > .fc-ui {
+    max-width: initial;
+  }
+
+  #bookingForm .guest {
+    max-width: initial;
+  }
+
+  #bookingForm .btn {
+    min-width: 120px;
+    max-width: 120px;
+    width: 100%;
+  }
+
+  /* =========================== ABOUT */
+
+  #aboutSection .wrapper {
+    max-width: 720px;
+    padding: 50px 15px;
+  }
+
+  /* =========================== TESTIMONIALS */
+
+  #testimonialsSlider .testimonials-item .slider-thumbnail {
+    width: 390px;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+
+  #testimonialsSection .inner-wrapper {
+    max-width: 690px;
+  }
+
+  /* =========================== MAP */
+
+  #mapSection .wrapper {
+    max-width: 720px;
+  }
+
+  /* =========================== FOOTER */
+
+  #footer {
+    padding: 36px 0;
+  }
+
+  #footer p a {
+    display: inline-block;
+  }
+}
+
+/* =========================================== MIN WIDTH 992px */
+
+@media screen and (min-width: 992px) {
+  /* =========================== MAIN BANNER */
+
+  #bookingForm .spacing {
+    width: 25px;
+    min-width: 25px;
+  }
+
+  /* =========================== ABOUT */
+
+  #aboutSection {
+    height: 550px;
+  }
+
+  #aboutSection .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #aboutSection .wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  #aboutSection #aboutBanner {
+    width: 500px;
+    height: 600px;
+    max-width: 814px;
+  }
+
+  #aboutSection #aboutDetails {
+    padding: 50px 30px 0 50px;
+  }
+
+  /* =========================== ACTIVITIES */
+
+  #activitiesSection {
+    padding-top: 100px;
+  }
+
+  /* =========================== TESTIMONIALS */
+
+  #testimonialsSection .inner-wrapper {
+    max-width: 930px;
+  }
+
+  /* =========================== MAP */
+
+  #mapSection .wrapper {
+    max-width: 930px;
+    padding: 0;
+  }
+}
+
+/* =========================================== MIN WIDTH 1200px */
+
+@media screen and (min-width: 1200px) {
+  /* =========================== HEADER */
+
+  #header {
+    padding: 0 45px;
+  }
+
+  #header .wrapper {
+    padding: 25px 0;
+  }
+
+  #header #navigation {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  #header #logo {
+    padding-left: 0;
+  }
+
+  #logo img {
+    max-width: 280px;
+  }
+
+  #header .flaoting-plant {
+    width: 35px;
+    height: 158px;
+    left: initial;
+    right: 220px;
+  }
+
+  /* =========================== MAIN BANNER */
+
+  #mainBanner {
+    height: 800px;
+    padding-top: 200px;
+  }
+
+  #mainBanner #headerReview {
+    max-width: 480px;
+  }
+
+  #headerReview h1 {
+    font-size: 75px;
+    font-family: "Ethdown";
+    line-height: 1.2;
+  }
+
+  #headerReview p {
+    font-size: 17px;
+  }
+
+  #headerReview .btn {
+    margin-top: 20px;
+  }
+
+  #mainBanner #bookingForm {
+    position: absolute;
+    margin-top: 0;
+    background-color: transparent;
+    background-image: none;
+  }
+
+  #bookingForm .wrapper {
+    padding: 60px;
+    max-width: 1110px;
+    padding-right: 0;
+  }
+
+  #bookingForm .wrapper::before {
+    content: "";
+    display: block;
+    background-color: #873c0c;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin-left: -60px;
+    background-image: url("../images/booking__bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #bookingForm .date {
+    max-width: 600px;
+    min-width: 525px;
+  }
+
+  #bookingForm .guest {
+    max-width: 600px;
+    z-index: 15;
+  }
+
+  #bookingForm .fc-ui {
+    max-width: 300px;
+  }
+
+  #bookingForm .btn {
+    height: 60px;
+    padding: 16px 30px;
+    min-width: 180px;
+    z-index: 15;
+  }
+
+  /* =========================== ABOUT */
+
+  #aboutSection {
+    height: 720px;
+  }
+
+  #aboutSection #aboutBanner {
+    height: 800px;
+  }
+
+  #aboutSection #aboutHeading {
+    max-width: 550px;
+  }
+
+  #aboutSection #aboutDetails {
+    padding: 60px 40px 0 60px;
+  }
+
+  #aboutHeading p {
+    font-size: 17px;
+    line-height: 2.06;
+  }
+
+  #aboutIcons .icons-with-text img {
+    max-width: 62px;
+    max-height: 58px;
+  }
+
+  #aboutIcons .icons-with-text p {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+
+  /* =========================== ACTIVITIES */
+
+  #activitiesSection {
+    padding: 150px 0 100px;
+  }
+
+  #activitiesList {
+    margin-top: 70px;
+  }
+
+  #activitiesSection .button-holder {
+    padding: 50px 0 0;
+  }
+
+  #activitiesHeading p {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  #activitiesList .list-section {
+    margin-top: 30px;
+  }
+
+  #activitiesList .list-section p {
+    font-size: 16px;
+  }
+
+  /* =========================== GALLERY */
+
+  #gallerySection {
+    padding: 100px 0;
+  }
+
+  #gallerySection::before {
+    background-size: 486px 713px;
+    background-position: bottom -70px left -100px;
+  }
+
+  #galleryContent .gallery-category li:not(.divider) {
+    padding: 17px 24px;
+    height: 60px;
+    font-size: 18px;
+  }
+
+  #gallerySection .button-holder {
+    padding: 50px 0 0;
+  }
+
+  /* =========================== TESTIMONIALS */
+
+  #testimonialsSection {
+    padding: 100px 0;
+  }
+
+  #testimonialHeading p {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  #testimonialsSlider .testimonials-item .slider-details h4 {
+    font-size: 30px;
+  }
+
+  #testimonialsSlider .testimonials-item .slider-details p {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  /* =========================== MAP */
+
+  #mapSection .wrapper {
+    max-width: 1920px;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin: 0 auto;
+  }
+
+  #mapDetails {
+    max-width: 500px;
+    margin-right: 30px;
+  }
+
+  #mapDetails p {
+    line-height: 2.06;
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 45px;
+  }
+
+  #mapDetails .btn-icon {
+    display: block;
+    background-image: url("../images/icon__location.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 12px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  #mapFrame {
+    max-width: 790px;
+    width: 100%;
+    height: 430px;
+  }
+
+  #mapFrame canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* =========================================== MIN WIDTH 1400px */
+
+@media screen and (min-width: 1400px) {
+  /* =========================== HEADER */
+
+  #logo img {
+    max-width: 290px;
+  }
+
+  #navigation nav li a {
+    font-size: 17px;
+  }
+
+  /* =========================== MAIN BANNER */
+
+  #mainBanner {
+    height: 963px;
+  }
+
+  #bookingForm .wrapper {
+    max-width: 1290px;
+  }
+
+  #bookingForm .date {
+    max-width: 660px;
+    min-width: 660px;
+  }
+
+  #bookingForm .guest {
+    max-width: 330px;
+    min-width: 330px;
+    z-index: 15;
+  }
+
+  #bookingForm .guset .fc-ui {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #bookingForm .fc-ui {
+    max-width: initial;
+  }
+
+  /* =========================== MAP */
+
+  #mapSection .wrapper {
+    padding-left: 75px;
+  }
+
+  #mapDetails {
+    max-width: 600px;
+  }
+
+  #mapFrame {
+    height: 530px;
+  }
+}
+
+/* =========================================== MIN WIDTH 1800px */
+
+@media screen and (min-width: 1800px) {
+  /* =========================== MAIN BANNER */
+
+  #bookingForm .wrapper::before {
+    width: 85%;
+  }
+
+  /* =========================== ABOUT */
+
+  #aboutSection {
+    height: 857px;
+  }
+
+  #aboutSection #aboutBanner {
+    width: 100%;
+    height: 938px;
+    max-width: 814px;
+  }
+
+  #aboutSection #aboutDetails {
+    padding: 140px 130px 0 140px;
+  }
+
+  #aboutDetails #aboutHeading {
+    max-width: 600px;
+  }
+
+  #aboutHeading p {
+    margin-bottom: 40px;
+  }
+
+  /* =========================== ACTIVITIES */
+
+  #activitiesSection {
+    padding-top: 190px;
+    padding-bottom: 120px;
+  }
+
+  /* =========================== GALLERY */
+
+  #gallerySection {
+    padding: 120px 0;
+  }
+
+  /* =========================== TESTIMONIALS */
+
+  #testimonialsSection {
+    padding: 120px 0;
+  }
+
+  /* =========================== MAP */
+
+  #mapSection .wrapper {
+    padding-left: 305px;
+  }
+}
