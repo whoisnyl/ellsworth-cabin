@@ -403,6 +403,7 @@
 
   #mainBanner {
     height: 963px;
+    padding-top: 280px;
   }
 
   #bookingForm .wrapper {

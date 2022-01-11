@@ -25,11 +25,11 @@
 			<div class="wrapper">
 				<div class="hstack align-items-center justify-content-between">
 					<div id="logo">
-						<a href="#">
+						<a href="index.html">
 							<img src="assets/images/ellsworth-cabin.png" alt="Ellsworth Cabin" class="img-fluid">
 						</a>
 					</div>
-					<div id="navigation">
+					<div id="navigation" class="d-none d-xl-block">
 						<nav class="d-flex flex-column flex-xl-row align-items-center justify-content-center">
 							<li><a class="link-primary nav-list" href="#mainBanner">Cabin</a></li>
 							<li><a class="link-primary nav-list" href="#aboutSection">About</a></li>
@@ -38,23 +38,14 @@
 							<li><a class="link-primary nav-list" href="#testimonialsSection">Testimonials</a></li>
 							<li><a class="link-primary nav-list" href="#mapSection">Map</a></li>
 						</nav>
-						<a href="#" class="btn btn-primary text-uppercase d-xl-none">
-							<div class="hstack justify-content-center align-items-center">
-								<span class="btn-icon"></span>
-								<span>Book now</span>
-							</div>
-						</a>
 					</div>
-					<div id="booking" class="d-none d-xl-block">
-						<a href="#" class="btn btn-primary text-uppercase">
+					<div id="booking">
+						<a href="#mainBanner" class="btn btn-primary text-uppercase">
 							<div class="hstack align-items-center">
 								<span class="btn-icon"></span>
 								<span>Book now</span>
 							</div>
 						</a>
-					</div>
-					<div id="burger" class="d-block d-xl-none">
-						<div class="burger-bar"></div>
 					</div>
 				</div>
 				<img class="img-fluid flaoting-plant" src="assets/images/header__plant-bg.png" alt="Plant" />
@@ -266,11 +257,45 @@
 									<canvas class="bg-image" style="background-image: url('assets/images/gallery__thumbnail-06.png');"></canvas>
 								</div>
 							</div>
+							<!-- ====================================================== -->
+							<!-- ======== LIST ALL THAT NEEDS TO BE HIDDEN BELOW ====== -->
+							<!-- ****************************************************** -->
+							<!-- ========== Just copy one of the list below =========== --> <!-- ====================================================== -->
+							<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
+								<div class="grid-thumbnail">
+									<canvas class="bg-image" style="background-image: url('assets/images/gallery__thumbnail-01.png');"></canvas>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
+								<div class="grid-thumbnail">
+									<canvas class="bg-image" style="background-image: url('assets/images/gallery__thumbnail-02.png');"></canvas>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
+								<div class="grid-thumbnail">
+									<canvas class="bg-image" style="background-image: url('assets/images/gallery__thumbnail-03.png');"></canvas>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
+								<div class="grid-thumbnail">
+									<canvas class="bg-image" style="background-image: url('assets/images/gallery__thumbnail-04.png');"></canvas>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
+								<div class="grid-thumbnail">
+									<canvas class="bg-image" style="background-image: url('assets/images/gallery__thumbnail-05.png');"></canvas>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="interior">
+								<div class="grid-thumbnail">
+									<canvas class="bg-image" style="background-image: url('assets/images/gallery__thumbnail-06.png');"></canvas>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="text-center button-holder">
-					<button type="button" class="btn btn-primary text-uppercase">Show more</button>
+					<button type="button" class="btn btn-primary text-uppercase" id="showMoreGallery">Show more</button>
 				</div>
 			</div>
 		</div>

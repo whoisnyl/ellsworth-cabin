@@ -1,7 +1,7 @@
 
 
 $(window).on('load', function() {
-	$('#navigation a').on('click', function(e) {
+	$('#header a').on('click', function(e) {
 		e.preventDefault();
 
 		const section = $(this).attr('href')
@@ -13,18 +13,6 @@ $(window).on('load', function() {
 })
 
 $(document).ready(function() {
-	// navigation
-
-	$(window).on('resize', function() {
-		if ($(this).outerWidth() <= 1200) {
-			let windowHeight = $(this).outerHeight()
-			$('#navigation').css('top', -Math.abs(windowHeight))
-		}
-	}).resize();
-
-	$('#burger').on('click', function() {
-		$('#navigation').toggleClass('open')
-	});
 
 	// booking form
 
@@ -56,21 +44,66 @@ $(document).ready(function() {
 
 	// gallery filtering
 
+	let filter = 'all';
+	let count = 0;
+
 	$('.gallery-category li').on('click', function() {
 		$(this).addClass('active').siblings().removeClass('active')
-		const filter = $(this).text();
+		filter = $(this).text();
 
-		if (filter.toLowerCase() === 'all') {
-			$('.gallery-list').fadeIn()
+		$('.gallery-list').each(function() {
+			if (filter.toLowerCase() === 'all') {
+				if ($(this).data('visibility') === 'hidden') {
+					$(this).addClass('hidden').hide()
+				} else {
+					$(this).fadeIn();
+				}
+			} else {
+				if ($(this).data('category') === filter.toLowerCase()) {
+					if ($(this).data('visibility') === 'hidden') {
+						$(this).addClass('hidden').hide()
+					} else {
+						$(this).fadeIn();
+					}
+					count++;
+				} else {
+					$(this).fadeOut()
+				}
+			}
+
+			console.log(count)
+			$('#showMoreGallery').show()
+		});
+
+		// hide show more button if no images to show
+		if (filter.toLowerCase() !== 'all' && count === 0) {
+			$('#showMoreGallery').hide()
 		} else {
-			$('.gallery-list').each(function() {
+			$('#showMoreGallery').show();
+		}
+		
+		// scroll to top of section every time filter reset
+		$('html, body').animate({
+			scrollTop: $('#gallerySection').offset().top
+		}, 100);
+		
+		// reset count
+		count = 0;
+	});
+
+	$('#showMoreGallery').on('click', function() {
+		if (filter.toLowerCase() === 'all') {
+			$('.gallery-list.hidden').fadeIn().removeClass('hidden')
+		} else {
+			$('.gallery-list.hidden').each(function() {
 				if ($(this).data('category') !== filter.toLowerCase()) {
 					$(this).fadeOut()
 				} else {
-					$(this).fadeIn()
+					$(this).fadeIn().removeClass('hidden')
 				}
 			})
 		}
+		$(this).hide()
 	})
 
 	// initiate testimonials slider
