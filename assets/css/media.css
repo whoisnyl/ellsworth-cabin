@@ -68,6 +68,21 @@
   #footer p a {
     display: inline-block;
   }
+
+  /* =========================== UTILS */
+
+  #galleryModal {
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  #galleryModal .wrapper {
+    padding: 30px;
+  }
+
+  #galleryModal #closeModal {
+    top: 0;
+    right: 30px;
+  }
 }
 
 /* =========================================== MIN WIDTH 992px */
@@ -124,6 +139,17 @@
   #mapSection .wrapper {
     max-width: 930px;
     padding: 0;
+  }
+
+  /* =========================== BOOKING RESULT */
+
+  #bookingDescription {
+    padding-right: 120px;
+  }
+
+  #reservationForm {
+    width: 100%;
+    max-width: 380px;
   }
 }
 
@@ -384,6 +410,12 @@
     background-size: cover;
     background-position: center;
   }
+
+  /* =========================== BOOKING RESULT */
+
+  #bookingResult {
+    padding: 260px 0 150px;
+  }
 }
 
 /* =========================================== MIN WIDTH 1400px */
@@ -442,6 +474,12 @@
 
   #mapFrame {
     height: 530px;
+  }
+
+  /* =========================== BOOKING RESULT */
+
+  #bookingDescription {
+    padding-right: 250px;
   }
 }
 

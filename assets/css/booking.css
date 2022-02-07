@@ -1,0 +1,48 @@
+/* =========================== BOOKING */
+
+#bookingResult {
+  background-color: #393e1f;
+  padding: 105px 0 30px;
+  /* background-image: url("../images/gallery__bg.jpg"); */
+  min-height: calc(100vh - 92px);
+}
+
+#bookingResult .heading {
+  margin-bottom: 40px;
+}
+
+#bookingResult .heading-list:not(:first-of-type) {
+  margin-left: 15px;
+}
+
+#reservationForm {
+  background-color: #873c0c;
+  background-image: url("../images/booking__bg.png");
+  background-repeat: repeat;
+  background-size: contain;
+  padding: 30px;
+}
+
+#reservationForm section {
+  margin-bottom: 30px;
+}
+
+#reservationForm section h3 {
+  color: #ddd2af;
+}
+
+#reservationForm section h3 > span {
+  color: #ddd2af;
+  margin-left: 8px;
+}
+
+#reservationForm form .btn {
+  width: 100%;
+}
+
+/* =========================== CONFIRMATION */
+
+#bookingConfirmation {
+  max-width: 600px;
+  margin: 0 auto;
+}
