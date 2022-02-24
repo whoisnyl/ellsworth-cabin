@@ -1,6 +1,6 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 session_save_path( $root . "/admin/cgi-bin/tmp" );
 session_start();
@@ -18,7 +18,7 @@ $password = $_POST['password'];
 if ($email == '' || $password == '') {
 	$_SESSION['auth']['error'] = 'Invalid email address or password';
 
-	header('Location: /ellsworth-cabin/admin');
+	header('Location: /admin');
 	exit;
 }
 
@@ -35,14 +35,14 @@ if ($result->num_rows === 1) {
 		$_SESSION['auth']['email'] = $row['email_address'];
 		$_SESSION['auth']['is_logged_in'] = 1;
 
-		header('Location: /ellsworth-cabin/admin/booking');
+		header('Location: /admin/booking');
 		exit;
 
 	} else {
 
 		$_SESSION['auth']['error'] = 'Invalid email address or password';
 
-		header('Location: /ellsworth-cabin/admin');
+		header('Location: /admin');
 		exit;
 
 	}
@@ -51,7 +51,7 @@ if ($result->num_rows === 1) {
 
 	$_SESSION['auth']['error'] = 'Invalid email address or password';
 
-	header('Location: /ellsworth-cabin/admin');
+	header('Location: /admin');
 	exit;
 
 }

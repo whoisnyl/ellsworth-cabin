@@ -1,6 +1,6 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 session_save_path( $root . "/cgi-bin/tmp" );
 session_start();
@@ -24,7 +24,7 @@ get_header('home');
 					<a href="#" class="btn btn-primary text-uppercase">Watch Video</a>
 				</section>
 			</div>
-			<form method="POST" action="/ellsworth-cabin/process/booking/search_date.php" id="bookingForm">
+			<form method="POST" action="/process/booking/search_date.php" id="bookingForm">
 				<div class="wrapper">
 					<div class="d-flex flex-column align-items-center flex-md-row">
 						<div class="date">
@@ -136,7 +136,7 @@ get_header('home');
 				<div class="row">
 					<div class="col-12 col-md-4">
 						<div class="list-thumbnail">
-							<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/activities__thumbnail-01.png');"></canvas>
+							<canvas class="bg-image" style="background-image: url('/assets/images/activities__thumbnail-01.webp');"></canvas>
 							<p class="tag">Popular choice</p>
 						</div>
 						<section class="list-section">
@@ -146,7 +146,7 @@ get_header('home');
 					</div>
 					<div class="col-12 col-md-4">
 						<div class="list-thumbnail">
-							<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/activities__thumbnail-02.png');"></canvas>
+							<canvas class="bg-image" style="background-image: url('/assets/images/activities__thumbnail-02.webp');"></canvas>
 						</div>
 						<section class="list-section">
 							<h4 class="mini-title text-uppercase">Fishing</h4>
@@ -155,7 +155,7 @@ get_header('home');
 					</div>
 					<div class="col-12 col-md-4">
 						<div class="list-thumbnail">
-							<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/activities__thumbnail-03.png');"></canvas>
+							<canvas class="bg-image" style="background-image: url('/assets/images/activities__thumbnail-03.webp');"></canvas>
 						</div>
 						<section class="list-section">
 							<h4 class="mini-title text-uppercase">River Rafting</h4>
@@ -193,32 +193,32 @@ get_header('home');
 					<div class="row">
 						<div class="col-12 col-md-6 col-lg-4 gallery-list" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-01.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-01.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-02.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-02.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-03.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-03.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-04.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-04.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-05.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-05.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list" data-category="interior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-06.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-06.webp');"></canvas>
 							</div>
 						</div>
 						<!-- ====================================================== -->
@@ -227,32 +227,32 @@ get_header('home');
 						<!-- ========== Just copy one of the list below =========== --> <!-- ====================================================== -->
 						<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-01.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-01.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-02.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-02.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-03.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-03.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-04.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-04.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="exterior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-05.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-05.webp');"></canvas>
 							</div>
 						</div>
 						<div class="col-12 col-md-6 col-lg-4 gallery-list hidden" data-visibility="hidden" data-category="interior">
 							<div class="grid-thumbnail">
-								<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/gallery__thumbnail-06.png');"></canvas>
+								<canvas class="bg-image" style="background-image: url('/assets/images/gallery__thumbnail-06.webp');"></canvas>
 							</div>
 						</div>
 					</div>
@@ -278,7 +278,7 @@ get_header('home');
 						<div class="testimonials-item">
 							<div class="d-flex flex-column flex-md-row align-items-center">
 								<div class="slider-thumbnail">
-									<img src="assets/images/activities__thumbnail-01.png" alt="" class="img-fluid">
+									<img src="assets/images/activities__thumbnail-01.webp" alt="" class="img-fluid">
 								</div>
 								<section class="slider-details">
 									<h4 class="text-uppercase">Leslie Kho</h4>
@@ -290,7 +290,7 @@ get_header('home');
 						<div class="testimonials-item">
 							<div class="d-flex flex-column flex-md-row align-items-center">
 								<div class="slider-thumbnail">
-									<img src="assets/images/activities__thumbnail-01.png" alt="" class="img-fluid">
+									<img src="assets/images/activities__thumbnail-01.webp" alt="" class="img-fluid">
 								</div>
 								<section class="slider-details">
 									<h4 class="text-uppercase">Leslie Kho</h4>
@@ -303,7 +303,7 @@ get_header('home');
 						<div class="testimonials-item">
 							<div class="d-flex flex-column flex-md-row align-items-center">
 								<div class="slider-thumbnail">
-									<img src="assets/images/activities__thumbnail-01.png" alt="" class="img-fluid">
+									<img src="assets/images/activities__thumbnail-01.webp" alt="" class="img-fluid">
 								</div>
 								<section class="slider-details">
 									<h4 class="text-uppercase">Leslie Kho</h4>
@@ -316,7 +316,7 @@ get_header('home');
 						<div class="testimonials-item">
 							<div class="d-flex flex-column flex-md-row align-items-center">
 								<div class="slider-thumbnail">
-									<img src="assets/images/activities__thumbnail-01.png" alt="" class="img-fluid">
+									<img src="assets/images/activities__thumbnail-01.webp" alt="" class="img-fluid">
 								</div>
 								<section class="slider-details">
 									<h4 class="text-uppercase">Leslie Kho</h4>
@@ -352,7 +352,7 @@ get_header('home');
 						</a>
 					</section>
 					<div id="mapFrame">
-						<canvas class="bg-image" style="background-image: url('/ellsworth-cabin/assets/images/map__googlemap.png');"></canvas>
+						<canvas class="bg-image" style="background-image: url('/assets/images/map__googlemap.webp');"></canvas>
 					</div>
 				</div>
 			</div>

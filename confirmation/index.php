@@ -1,6 +1,6 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 session_save_path( $root . "/cgi-bin/tmp" );
 session_start();
@@ -8,7 +8,7 @@ session_start();
 require $root . '/process/booking/get_one.php';
 
 if (!isset($_SESSION['confirmation']) || $data['booking'] == 0) {
-	header('Location: /ellsworth-cabin');
+	header('Location: /');
 	exit;
 }
 
@@ -27,11 +27,11 @@ if (!isset($_SESSION['confirmation']) || $data['booking'] == 0) {
 	<!-- css -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link href="/ellsworth-cabin/assets/css/slick.css" rel="stylesheet">
-	<link href="/ellsworth-cabin/assets/css/jquery-ui.min.css" rel="stylesheet">
-	<link href="/ellsworth-cabin/assets/css/global.css" rel="stylesheet">
-	<link href="/ellsworth-cabin/assets/css/booking.css" rel="stylesheet">
-	<link href="/ellsworth-cabin/assets/css/media.css" rel="stylesheet">
+	<link href="/assets/css/slick.css" rel="stylesheet">
+	<link href="/assets/css/jquery-ui.min.css" rel="stylesheet">
+	<link href="/assets/css/global.css" rel="stylesheet">
+	<link href="/assets/css/booking.css" rel="stylesheet">
+	<link href="/assets/css/media.css" rel="stylesheet">
 	<!-- seo -->
 	<title>Ellsworth Cabin</title>
 </head>
@@ -42,7 +42,7 @@ if (!isset($_SESSION['confirmation']) || $data['booking'] == 0) {
 				<div class="hstack align-items-center justify-content-between">
 					<div id="logo">
 						<a href="/ellsworth-cabin">
-							<img src="/ellsworth-cabin/assets/images/ellsworth-cabin.png" alt="Ellsworth Cabin" class="img-fluid">
+							<img src="/assets/images/ellsworth-cabin.png" alt="Ellsworth Cabin" class="img-fluid">
 						</a>
 					</div>
 					<div id="navigation" class="d-none d-xl-block">
@@ -64,7 +64,7 @@ if (!isset($_SESSION['confirmation']) || $data['booking'] == 0) {
 						</a>
 					</div>
 				</div>
-				<img class="img-fluid flaoting-plant" src="/ellsworth-cabin/assets/images/header__plant-bg.png" alt="Plant" />
+				<img class="img-fluid flaoting-plant" src="/assets/images/header__plant-bg.png" alt="Plant" />
 			</div>
 		</div>
 	</header>
@@ -76,7 +76,7 @@ if (!isset($_SESSION['confirmation']) || $data['booking'] == 0) {
 					<section class="text-center" id="bookingConfirmation">
 						<h2>Booking Reservation Successful</h2>
 						<p class="mb-5">We will contact your for your payment as soon as possible. If you have any concern, don't hesitate to contact as and provide your booking ID: <?= $_SESSION['confirmation'] ?></p>
-						<a href="/ellsworth-cabin/process/booking/clear_session.php" class="btn btn-primary text-uppercase">Go back home</a>
+						<a href="/process/booking/clear_session.php" class="btn btn-primary text-uppercase">Go back home</a>
 					</section>
 
 			</div>
@@ -92,8 +92,8 @@ if (!isset($_SESSION['confirmation']) || $data['booking'] == 0) {
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
-	<script src="/ellsworth-cabin/assets/js/slick.min.js"></script>
-	<script src="/ellsworth-cabin/assets/js/jquery-ui.min.js"></script>
-	<script src="/ellsworth-cabin/assets/js/home.js"></script>
+	<script src="/assets/js/slick.min.js"></script>
+	<script src="/assets/js/jquery-ui.min.js"></script>
+	<script src="/assets/js/home.js"></script>
 </body>
 </html>

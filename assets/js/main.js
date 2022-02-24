@@ -1,8 +1,8 @@
 $(window).on("load", function () {
   $("#header a").on("click", function (e) {
     // check route
-    if (window.location.pathname.replaceAll("/", "") !== "ellsworth-cabin") {
-      window.location.href = "/ellsworth-cabin";
+    if (window.location.pathname.replaceAll("/", "") !== "") {
+      window.location.href = "/";
       return false;
     }
 

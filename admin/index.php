@@ -1,12 +1,12 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 session_save_path( $root . "/admin/cgi-bin/tmp" );
 session_start();
 
 if (isset($_SESSION['auth']['is_logged_in']) && $_SESSION['auth']['is_logged_in'] === 1) {
-	header("location: /ellsworth-cabin/admin/booking");
+	header("location: /admin/booking");
 	exit;
 }
 
@@ -25,15 +25,15 @@ if (isset($_SESSION['auth']['is_logged_in']) && $_SESSION['auth']['is_logged_in'
 	<!-- css -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link href="/ellsworth-cabin/assets/css/jquery-ui.min.css" rel="stylesheet">
-	<link href="/ellsworth-cabin/assets/css/global.css" rel="stylesheet">
-	<link href="/ellsworth-cabin/assets/css/admin/signin.css" rel="stylesheet">
+	<link href="/assets/css/jquery-ui.min.css" rel="stylesheet">
+	<link href="/assets/css/global.css" rel="stylesheet">
+	<link href="/assets/css/admin/signin.css" rel="stylesheet">
 	<!-- seo -->
 	<title>Ellsworth Cabin</title>
 </head>
 <body>
 	<main class="form-signin">
-		<form method="POST" action="/ellsworth-cabin/process/admin/authenticate/signin.php">
+		<form method="POST" action="/process/admin/authenticate/signin.php">
 			<h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
 			<div class="col-12">

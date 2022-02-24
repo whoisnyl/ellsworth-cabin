@@ -1,12 +1,12 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 require $root . "/connect.php";
 
 // Check session
 if (!isset($_SESSION['auth']) || isset($_SESSION['auth']['error'])) {
-	header('Location: /ellsworth-cabin');
+	header('Location: /');
 	exit;
 }
 

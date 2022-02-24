@@ -1,6 +1,6 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 session_save_path( $root . "/cgi-bin/tmp" );
 session_start();
@@ -9,7 +9,7 @@ require $root . '/header.php';
 require $root . '/footer.php';
 
 if (!isset($_SESSION['booking']) || isset($_SESSION['booking']['search_error'])) {
-	header('Location: /ellsworth-cabin');
+	header('Location: /');
 	exit;
 }
 
@@ -171,7 +171,7 @@ get_header('booking');
 						<h3>PHP <?= $priceFormat ?><span>per night</span></h3>
 						<p>The Ellsworth Cabin - A Unique Glamping Experience</p>
 					</section>
-					<form method="POST" action="/ellsworth-cabin/process/booking/create_new.php">
+					<form method="POST" action="/process/booking/create_new.php">
 						<input type="hidden" name="booking_id" value="<?= $bookingId ?>" />
 						<input type="hidden" name="check_in" value="<?= $checkIn ?>" />
 						<input type="hidden" name="check_out" value="<?= $checkOut ?>" />

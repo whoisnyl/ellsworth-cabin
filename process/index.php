@@ -1,4 +1,4 @@
 <?php
-	header('Location: /ellsworth-cabin');
+	header('Location: /');
 	exit;
 ?>

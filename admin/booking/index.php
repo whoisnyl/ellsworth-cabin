@@ -1,6 +1,6 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 session_save_path( $root . "/admin/cgi-bin/tmp" );
 session_start();
@@ -8,7 +8,7 @@ session_start();
 require $root . '/process/admin/booking/get_all_pending.php';
 
 if (!isset($_SESSION['auth']['is_logged_in']) || $_SESSION['auth']['is_logged_in'] !== 1) {
-	header("location: /ellsworth-cabin/admin");
+	header("location: /admin");
 	exit;
 }
 
@@ -27,7 +27,7 @@ if (!isset($_SESSION['auth']['is_logged_in']) || $_SESSION['auth']['is_logged_in
 	<!-- css -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link href="/ellsworth-cabin/assets/css/admin/main.css" rel="stylesheet">
+	<link href="/assets/css/admin/main.css" rel="stylesheet">
 	<!-- seo -->
 	<title>Ellsworth Cabin</title>
 </head>
@@ -46,8 +46,8 @@ if (!isset($_SESSION['auth']['is_logged_in']) || $_SESSION['auth']['is_logged_in
 					</button>
 					<div class="collapse show" id="home-collapse">
 						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-							<li><a href="/ellsworth-cabin/admin/booking" class="link-dark rounded">Pending</a></li>
-							<li><a href="/ellsworth-cabin/admin/booking/reserved" class="link-dark rounded">Reserved</a></li>
+							<li><a href="/admin/booking" class="link-dark rounded">Pending</a></li>
+							<li><a href="/admin/booking/reserved" class="link-dark rounded">Reserved</a></li>
 						</ul>
 					</div>
 				</li>
@@ -58,7 +58,7 @@ if (!isset($_SESSION['auth']['is_logged_in']) || $_SESSION['auth']['is_logged_in
 					</button>
 					<div class="collapse" id="account-collapse">
 						<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-							<li><a href="/ellsworth-cabin/process/admin/authenticate/signout.php" class="link-dark rounded">Sign out</a></li>
+							<li><a href="/process/admin/authenticate/signout.php" class="link-dark rounded">Sign out</a></li>
 						</ul>
 					</div>
 				</li>
@@ -109,8 +109,8 @@ if (!isset($_SESSION['auth']['is_logged_in']) || $_SESSION['auth']['is_logged_in
 											Action
 										</button>
 										<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-											<li><a href="/ellsworth-cabin/process/admin/booking/mark_as_paid.php?id=<?= $data[$i]['booking_id'] ?>" class="dropdown-item">Mark as paid</a></li>
-											<li><a href="/ellsworth-cabin/process/admin/booking/cancel.php?id=<?= $data[$i]['booking_id'] ?>" class="dropdown-item">Cancel booking</a></li>
+											<li><a href="/process/admin/booking/mark_as_paid.php?id=<?= $data[$i]['booking_id'] ?>" class="dropdown-item">Mark as paid</a></li>
+											<li><a href="/process/admin/booking/cancel.php?id=<?= $data[$i]['booking_id'] ?>" class="dropdown-item">Cancel booking</a></li>
 										</ul>
 									</div>
 								</td>

@@ -1,6 +1,6 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 require $root . "/connect.php";
 
@@ -9,7 +9,7 @@ session_start();
 
 // Check session
 if (!isset($_SESSION['auth']) || isset($_SESSION['auth']['error'])) {
-	header('Location: /ellsworth-cabin');
+	header('Location: /');
 	exit;
 }
 
@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 }
 
 if (!isset($_GET['id'])) {
-	header('Location: /ellsworth-cabin/admin/booking');
+	header('Location: /admin/booking');
 	exit;
 }
 
@@ -29,10 +29,10 @@ $id = $_GET['id'];
 $sql = "UPDATE booking SET booking_status='cancelled', updated_by='$user' WHERE booking_id = '$id'";
 
 if ($conn->query($sql) === TRUE) {
-  header('Location: /ellsworth-cabin/admin/booking');
+  header('Location: /admin/booking');
 	exit;
 } else {
-  header('Location: /ellsworth-cabin/admin/booking?id=' . $id);
+  header('Location: /admin/booking?id=' . $id);
 	exit;
 }
 

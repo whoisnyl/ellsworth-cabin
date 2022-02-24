@@ -1,6 +1,6 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 session_save_path( $root . "/cgi-bin/tmp" );
 session_start();
@@ -29,7 +29,7 @@ $guests = $_POST['guests'];
 if ($checkIn === "" || $checkOut === "" || $guests === "") {
 	$_SESSION['booking']['search_error'] = 'Please check input value';
 
-	header('Location: /ellsworth-cabin');
+	header('Location: /');
 	exit;
 }
 
@@ -41,7 +41,7 @@ $data = mysqli_fetch_assoc($result);
 if ($data['booking'] > 0) {
 	$_SESSION['booking']['search_error'] = 'Selected date not available anymore';
 
-	header('Location: /ellsworth-cabin');
+	header('Location: /');
 	exit;
 }
 
@@ -54,7 +54,7 @@ $_SESSION['booking']['guests'] = $guests;
 
 $conn->close();
 
-header('Location: /ellsworth-cabin/booking');
+header('Location: /booking');
 exit;
 
 ?>

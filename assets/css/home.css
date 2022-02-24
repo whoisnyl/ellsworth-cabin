@@ -3,7 +3,7 @@
 #mainBanner {
   padding-top: 100px;
   position: relative;
-  background-image: url("../images/banner__main.png");
+  background-image: url("../images/banner__main.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -147,7 +147,7 @@
 
 #aboutSection {
   position: relative;
-  background-image: url("../images/about__bg.jpg");
+  background-image: url("../images/about__bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -174,7 +174,7 @@
 #aboutBanner canvas {
   display: block;
   margin: 0;
-  background-image: url("../images/banner__welcome.png");
+  background-image: url("../images/banner__welcome.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -586,7 +586,7 @@
 
 #mapSection {
   position: relative;
-  background-image: url("../images/map__bg.jpg");
+  background-image: url("../images/map__bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -1,6 +1,6 @@
 <?php
 
-$root = $_SERVER["DOCUMENT_ROOT"] . '/ellsworth-cabin';
+$root = $_SERVER["DOCUMENT_ROOT"];
 
 session_save_path( $root . "/cgi-bin/tmp" );
 session_start();
@@ -23,7 +23,7 @@ $mobileNumber = $_POST['mobile_number'];
 if ($fullName === "" || $mobileNumber === "") {
 	$_SESSION['booking']['create_error'] = 'Please check input value';
 
-	header('Location: /ellsworth-cabin/booking');
+	header('Location: /booking');
 	exit;
 }
 
@@ -49,12 +49,12 @@ if ($conn->query($sql) === TRUE) {
 	unset($_SESSION['booking']);
 	$_SESSION['confirmation'] = $bookingId;
 	
-	header('Location: /ellsworth-cabin/confirmation');
+	header('Location: /confirmation');
 	exit;
 } else {
   $_SESSION['booking']['create_error'] = 'Something went wrong, please try again.';
 
-	header('Location: /ellsworth-cabin/booking');
+	header('Location: /booking');
 	exit;
 }
 
